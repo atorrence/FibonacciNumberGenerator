@@ -10,6 +10,11 @@ namespace FibonacciNumberGenerator.Controllers
         {
             return View("Index");
         }
+        public ActionResult NewInput()
+        {
+            return View("NewInput");
+        }
+
         public ActionResult Result(Result model)
         {
             return View("Result", model);

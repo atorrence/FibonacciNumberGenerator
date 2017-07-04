@@ -1,0 +1,19 @@
+﻿
+@using FibonacciNumberGenerator.Models;
+@model Home
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Fibonacci Number Generator</h2>
+
+@using (Html.BeginForm("Result", "Home", FormMethod.Get))
+{
+    <p>What number of the Fibonacci Sequence would you like to see? </p>
+
+    @Html.TextBoxFor(m => m.InputNumber)
+
+    <button> Find Result</button>
+
+}
