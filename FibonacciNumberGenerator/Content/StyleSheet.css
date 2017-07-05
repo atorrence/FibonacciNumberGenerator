@@ -36,3 +36,12 @@ nav {
 header img {
     height: 110px;
 }
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    
+    padding: 15px;
+}

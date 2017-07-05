@@ -10,6 +10,6 @@ namespace FibonacciNumberGenerator.DAL
     {
         List<User> DisplayUsers();
 
-        bool SaveUserInput(int inputNumber, string ipAddress);
+        bool SaveUserInput(Int64 inputNumber, string ipAddress);
     }
 }

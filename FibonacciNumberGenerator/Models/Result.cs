@@ -7,19 +7,19 @@ namespace FibonacciNumberGenerator.Models
 {
     public class Result
     {
-        public int InputNumber { get; set; }
+        public Int64 InputNumber { get; set; }
         //Method to find the nth number of the Fibonacci Sequence
-        public int GetFibonacciSequence()
+        public Int64 GetFibonacciSequence()
         {
-            int previous = 0;
-            int next = 1;
-            int result = 0;
+            Int64 previous = 0;
+            Int64 next = 1;
+            Int64 result = 0;
 
-            for (int i = 3; i <= InputNumber; i++)
+            for (int i = 2; i <= InputNumber; i++)
             {
                 if (InputNumber <= 1)
                 {
-                    result = InputNumber;
+                    result = 0;
                 }
                 else
                 {

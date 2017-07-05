@@ -6,9 +6,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>UserInformation</h2>
+<h2>User Information</h2>
+<p>Here are the numbers and the IP Addresses from the last ten requests</p>
 
 <table>
+    <thead>
+        <tr>
+        <td>User's Number</td>
+        <td>User's IP Address</td>
+        </tr>
+    </thead>
     @foreach (var user in Model)
     {
         <tr>
