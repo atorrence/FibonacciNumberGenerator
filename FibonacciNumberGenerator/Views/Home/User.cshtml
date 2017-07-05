@@ -1,0 +1,19 @@
+﻿@using FibonacciNumberGenerator.Models
+@model List<User>
+
+@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserInformation</h2>
+
+<table>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.InputNumber</td>
+            <td>@user.IPAddress</td>
+        </tr>
+    }
+</table>

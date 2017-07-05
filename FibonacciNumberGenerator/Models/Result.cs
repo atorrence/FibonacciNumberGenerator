@@ -9,7 +9,7 @@ namespace FibonacciNumberGenerator.Models
     {
         public int InputNumber { get; set; }
         //Method to find the nth number of the Fibonacci Sequence
-        public int GetSequence()
+        public int GetFibonacciSequence()
         {
             int previous = 0;
             int next = 1;
