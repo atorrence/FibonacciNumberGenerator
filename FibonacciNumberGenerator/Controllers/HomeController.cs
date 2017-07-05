@@ -40,7 +40,7 @@ namespace FibonacciNumberGenerator.Controllers
             string ipAddress = string.Empty;
             if (Request.ServerVariables["HTTP_X_FORWARDED_FOR"] != null)
             {
-                ipAddress = Request.ServerVariables["REMOTE_ADDR"].ToString();
+                ipAddress = Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
             }
             return ipAddress;
         }
