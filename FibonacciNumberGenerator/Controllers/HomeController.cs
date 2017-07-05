@@ -24,7 +24,7 @@ namespace FibonacciNumberGenerator.Controllers
 
         public ActionResult Result(Result model)
         {
-            string ipAddress = Request.UserHostAddress;
+            string ipAddress = GetIPAddress();
             userDAL.SaveUserInput(model.InputNumber, ipAddress);
             return View("Result", model);
         }
@@ -33,6 +33,16 @@ namespace FibonacciNumberGenerator.Controllers
         {
             List<User> users = userDAL.DisplayUsers();
             return View("User", users);
+        }
+
+        private string GetIPAddress()
+        {
+            string ipAddress = string.Empty;
+            if (Request.ServerVariables["HTTP_X_FORWARDED_FOR"] != null)
+            {
+                ipAddress = Request.ServerVariables["REMOTE_ADDR"].ToString();
+            }
+            return ipAddress;
         }
     }
 }
