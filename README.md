@@ -21,7 +21,7 @@ a Data Access Layer to store information in and retrieve information from a data
 		<li>Added bootstrap to allow for a nav bar and the ability to toggle between the input view and the display view</li>
 		<li>Opted for one controller - I originally had twocontroller, but the information is all realted, so there was not a need to break it apart</li>
 		<li>Through unit testing, I determined that setting the values as integers did not allow for enough memory for the larger numbers.  I changed data type to long. </li>
-	<	li>Even with the data type as long, any Fibonacci Sequence number greater than the 92nd number was too large.  I added instructions to select an input number less than 93.</li>
+		<li>Even with the data type as long, any Fibonacci Sequence number greater than the 92nd number was too large.  I added instructions to select an input number less than 93.</li>
 	</ul>
 	
 <p>Improvements planned for further iterations:</p>
