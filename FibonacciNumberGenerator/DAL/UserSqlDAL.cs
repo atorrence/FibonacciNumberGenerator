@@ -15,7 +15,7 @@ namespace FibonacciNumberGenerator.DAL
         private const string SQL_DisplayUserInformation = "SELECT TOP 10 * FROM user_information ORDER BY user_id DESC;";
 
 
-        public bool SaveUserInput(Int64 inputNumber, string ipAddress)
+        public bool SaveUserInput(long inputNumber, string ipAddress)
         {
             try
             {
